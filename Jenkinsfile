@@ -1,5 +1,5 @@
 pipeline {
-    agent 'gcc-compiler'
+    agent any
     stages {
         stage ('Clone Repo'){
             steps {
