@@ -101,7 +101,9 @@ id: src/id.c check_bin_dir
 .PHONY: clean install help
 
 clean:
-	rm -rf $(OUT_DIR)/
+	ls -la
+	chmod +x $(OUT_DIR)
+	rm -rf $(OUT_DIR)
 
 install:
 	cp $(OUT_DIR)/* $(INSTALL_DIR)
